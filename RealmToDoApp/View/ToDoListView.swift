@@ -10,7 +10,7 @@ import RealmSwift
 
 struct ToDoListView: View {
     
-    @ObservedResults(ToDo.self) var ToDos
+    @ObservedResults(ToDo.self) var toDos
     @State private var name = ""
     @FocusState private var focus: Bool?
     
@@ -24,7 +24,7 @@ struct ToDoListView: View {
                     Spacer()
                     Button {
                         let newToDo = ToDo(name: name)
-                        $ToDos.append(newToDo)
+                        $toDos.append(newToDo)
                         name = ""
                         focus = nil // 버튼이 눌리면, focus 를 nil 로 만들어서, 키보드가 내려가도록 함
                     } label: {
@@ -35,13 +35,22 @@ struct ToDoListView: View {
                 .padding()
                 
                 List {
-                    ForEach(ToDos) { toDo in
+                    // keyPath 하나를 기준으로 정렬해서 ForEach 를 돌리는 법
+                    // ForEach(toDos.sorted(byKeyPath: "completed")) { toDo in
+                    
+                    // completed 를 1순위, urgency 를 1순위로 정렬하는 법
+                    ForEach(toDos.sorted(by: [
+                        SortDescriptor(keyPath: "completed"),
+                        SortDescriptor(keyPath: "urgency", ascending: false)
+                    ])) { toDo in
                         ToDoListRow(toDo: toDo)
                     }
+//                    .onDelete(perform: $toDos.remove(atOffsets:))
                     .listRowSeparator(.hidden)
                 }
                 .listStyle(.plain)
             }
+            .animation(.default, value: toDos)
             .navigationTitle("Realm ToDos")
         }
     }
