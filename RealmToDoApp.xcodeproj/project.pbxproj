@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C15754F427FB5E1B00F2F44D /* RealmToDoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15754F327FB5E1B00F2F44D /* RealmToDoAppApp.swift */; };
-		C15754F627FB5E1B00F2F44D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15754F527FB5E1B00F2F44D /* ContentView.swift */; };
+		C15754F627FB5E1B00F2F44D /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15754F527FB5E1B00F2F44D /* ToDoListView.swift */; };
 		C15754F827FB5E1D00F2F44D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15754F727FB5E1D00F2F44D /* Assets.xcassets */; };
 		C15754FB27FB5E1D00F2F44D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15754FA27FB5E1D00F2F44D /* Preview Assets.xcassets */; };
 		C157550227FB602300F2F44D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C157550127FB602300F2F44D /* Launch Screen.storyboard */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		C15754F027FB5E1B00F2F44D /* RealmToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15754F327FB5E1B00F2F44D /* RealmToDoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmToDoAppApp.swift; sourceTree = "<group>"; };
-		C15754F527FB5E1B00F2F44D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C15754F527FB5E1B00F2F44D /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		C15754F727FB5E1D00F2F44D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15754FA27FB5E1D00F2F44D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C157550127FB602300F2F44D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			children = (
 				C157550827FB628700F2F44D /* Model */,
 				C15754F327FB5E1B00F2F44D /* RealmToDoAppApp.swift */,
-				C15754F527FB5E1B00F2F44D /* ContentView.swift */,
+				C15754F527FB5E1B00F2F44D /* ToDoListView.swift */,
 				C15754F727FB5E1D00F2F44D /* Assets.xcassets */,
 				C157550127FB602300F2F44D /* Launch Screen.storyboard */,
 				C15754F927FB5E1D00F2F44D /* Preview Content */,
@@ -164,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C157550A27FB62A200F2F44D /* ToDo.swift in Sources */,
-				C15754F627FB5E1B00F2F44D /* ContentView.swift in Sources */,
+				C15754F627FB5E1B00F2F44D /* ToDoListView.swift in Sources */,
 				C15754F427FB5E1B00F2F44D /* RealmToDoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

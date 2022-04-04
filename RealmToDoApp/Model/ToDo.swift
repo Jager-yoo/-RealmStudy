@@ -33,7 +33,8 @@ final class ToDo: Object, ObjectKeyIdentifiable {
         }
     }
     
-    init(name: String) {
+    convenience init(name: String) {
+        self.init()
         self.name = name
     }
 }
