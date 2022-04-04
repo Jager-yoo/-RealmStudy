@@ -14,6 +14,7 @@
 		C157550227FB602300F2F44D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C157550127FB602300F2F44D /* Launch Screen.storyboard */; };
 		C157550527FB621800F2F44D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C157550427FB621800F2F44D /* Realm */; };
 		C157550727FB621800F2F44D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C157550627FB621800F2F44D /* RealmSwift */; };
+		C157550A27FB62A200F2F44D /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157550927FB62A200F2F44D /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C15754F727FB5E1D00F2F44D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15754FA27FB5E1D00F2F44D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C157550127FB602300F2F44D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C157550927FB62A200F2F44D /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		C15754F227FB5E1B00F2F44D /* RealmToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				C157550827FB628700F2F44D /* Model */,
 				C15754F327FB5E1B00F2F44D /* RealmToDoAppApp.swift */,
 				C15754F527FB5E1B00F2F44D /* ContentView.swift */,
 				C15754F727FB5E1D00F2F44D /* Assets.xcassets */,
@@ -72,6 +75,14 @@
 				C15754FA27FB5E1D00F2F44D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C157550827FB628700F2F44D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C157550927FB62A200F2F44D /* ToDo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C157550A27FB62A200F2F44D /* ToDo.swift in Sources */,
 				C15754F627FB5E1B00F2F44D /* ContentView.swift in Sources */,
 				C15754F427FB5E1B00F2F44D /* RealmToDoAppApp.swift in Sources */,
 			);
