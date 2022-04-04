@@ -12,6 +12,7 @@ struct ToDoListView: View {
     
     @ObservedResults(ToDo.self) var toDos
     @State private var name = ""
+    @State private var searchFilter = ""
     @FocusState private var focus: Bool?
     
     var body: some View {
@@ -49,6 +50,13 @@ struct ToDoListView: View {
                     .listRowSeparator(.hidden)
                 }
                 .listStyle(.plain)
+                // 검색 기능 추가
+                .searchable(text: $searchFilter, collection: $toDos, keyPath: \.name) {
+                    ForEach(toDos) { toDo in
+                        Text(toDo.name)
+                            .searchCompletion(toDo.name)
+                    }
+                }
             }
             .animation(.default, value: toDos)
             .navigationTitle("Realm ToDos")
