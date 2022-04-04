@@ -36,7 +36,7 @@ struct ToDoListView: View {
                 
                 List {
                     ForEach(ToDos) { toDo in
-                        Text(toDo.name)
+                        ToDoListRow(toDo: toDo)
                     }
                     .listRowSeparator(.hidden)
                 }
