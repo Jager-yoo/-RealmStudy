@@ -21,6 +21,7 @@
 		C157551327FC062000F2F44D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551227FC062000F2F44D /* City.swift */; };
 		C157551527FC069D00F2F44D /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551427FC069D00F2F44D /* CountriesListView.swift */; };
 		C157551727FC0A9400F2F44D /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551627FC0A9400F2F44D /* CountryRowView.swift */; };
+		C1F5A82C27FC206B00AEDF67 /* CitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F5A82B27FC206B00AEDF67 /* CitiesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		C157551227FC062000F2F44D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C157551427FC069D00F2F44D /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
 		C157551627FC0A9400F2F44D /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
+		C1F5A82B27FC206B00AEDF67 /* CitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				C157550C27FB757B00F2F44D /* ToDoListRow.swift */,
 				C157551427FC069D00F2F44D /* CountriesListView.swift */,
 				C157551627FC0A9400F2F44D /* CountryRowView.swift */,
+				C1F5A82B27FC206B00AEDF67 /* CitiesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				C157551127FC05D500F2F44D /* Country.swift in Sources */,
 				C157551727FC0A9400F2F44D /* CountryRowView.swift in Sources */,
 				C157551527FC069D00F2F44D /* CountriesListView.swift in Sources */,
+				C1F5A82C27FC206B00AEDF67 /* CitiesListView.swift in Sources */,
 				C157550F27FBFAAF00F2F44D /* MainTabView.swift in Sources */,
 				C157551327FC062000F2F44D /* City.swift in Sources */,
 			);
