@@ -39,6 +39,11 @@ struct ToDoListView: View {
                     // keyPath 하나를 기준으로 정렬해서 ForEach 를 돌리는 법
                     // ForEach(toDos.sorted(byKeyPath: "completed")) { toDo in
                     
+                    // ObjectId 클래스로 만든 id 에는 '생성된 순서' 정보가 녹아있음.
+                    // keyPath 를 "id" 로 잡고 ascending: false 로 지정하면, 최근에 생성된 것부터 내림차순 됨!
+                    // 참고로, ascending 은 디폴트 값이 'true' 임. 디폴트로 오름차순이라는 것!
+//                    ForEach(toDos.sorted(byKeyPath: "id", ascending: false)) { toDo in
+                    
                     // completed 를 1순위, urgency 를 1순위로 정렬하는 법
                     ForEach(toDos.sorted(by: [
                         SortDescriptor(keyPath: "completed"),
