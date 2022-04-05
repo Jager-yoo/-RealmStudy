@@ -19,6 +19,7 @@
 		C157550F27FBFAAF00F2F44D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157550E27FBFAAF00F2F44D /* MainTabView.swift */; };
 		C157551127FC05D500F2F44D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551027FC05D500F2F44D /* Country.swift */; };
 		C157551327FC062000F2F44D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551227FC062000F2F44D /* City.swift */; };
+		C157551527FC069D00F2F44D /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551427FC069D00F2F44D /* CountriesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C157550E27FBFAAF00F2F44D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		C157551027FC05D500F2F44D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		C157551227FC062000F2F44D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		C157551427FC069D00F2F44D /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				C157550E27FBFAAF00F2F44D /* MainTabView.swift */,
 				C15754F527FB5E1B00F2F44D /* ToDoListView.swift */,
 				C157550C27FB757B00F2F44D /* ToDoListRow.swift */,
+				C157551427FC069D00F2F44D /* CountriesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				C157550D27FB757B00F2F44D /* ToDoListRow.swift in Sources */,
 				C15754F427FB5E1B00F2F44D /* RealmToDoAppApp.swift in Sources */,
 				C157551127FC05D500F2F44D /* Country.swift in Sources */,
+				C157551527FC069D00F2F44D /* CountriesListView.swift in Sources */,
 				C157550F27FBFAAF00F2F44D /* MainTabView.swift in Sources */,
 				C157551327FC062000F2F44D /* City.swift in Sources */,
 			);
