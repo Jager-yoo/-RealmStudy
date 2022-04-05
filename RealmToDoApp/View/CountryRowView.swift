@@ -25,9 +25,3 @@ struct CountryRowView: View {
         .frame(height: 30)
     }
 }
-
-struct CountryRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        CountryRowView(country: Country(name: "Canada"))
-    }
-}

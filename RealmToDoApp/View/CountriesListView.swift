@@ -48,16 +48,9 @@ struct CountriesListView: View {
                         } label: {
                             Image(systemName: "keyboard.chevron.compact.down")
                         }
-
                     }
                 }
             }
         }
-    }
-}
-
-struct CountriesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        CountriesListView()
     }
 }

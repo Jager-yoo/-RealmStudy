@@ -40,9 +40,3 @@ struct ToDoListRow: View {
         .padding(.horizontal)
     }
 }
-
-struct ToDoListRow_Previews: PreviewProvider {
-    static var previews: some View {
-        ToDoListRow(toDo: ToDo(name: "할 일!"))
-    }
-}
