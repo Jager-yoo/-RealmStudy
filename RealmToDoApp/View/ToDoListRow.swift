@@ -11,6 +11,7 @@ import RealmSwift
 struct ToDoListRow: View {
     
     @ObservedRealmObject var toDo: ToDo
+    @FocusState var isFocused: Bool?
     
     var body: some View {
         HStack {
@@ -22,6 +23,7 @@ struct ToDoListRow: View {
             .buttonStyle(.plain)
             
             TextField("Update ToDo", text: $toDo.name)
+                .focused($isFocused, equals: true)
                 .textFieldStyle(.roundedBorder)
             
             Spacer()

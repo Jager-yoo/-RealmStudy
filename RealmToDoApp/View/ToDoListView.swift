@@ -13,7 +13,7 @@ struct ToDoListView: View {
     @ObservedResults(ToDo.self) var toDos
     @State private var name = ""
     @State private var searchFilter = ""
-    @FocusState private var focus: Bool?
+    @FocusState private var isFocused: Bool?
     
     var body: some View {
         NavigationView {
@@ -21,13 +21,13 @@ struct ToDoListView: View {
                 HStack {
                     TextField("New ToDo", text: $name)
                         .textFieldStyle(.roundedBorder)
-                        .focused($focus, equals: true)
+                        .focused($isFocused, equals: true)
                     Spacer()
                     Button {
                         let newToDo = ToDo(name: name)
                         $toDos.append(newToDo)
                         name = ""
-                        focus = nil // 버튼이 눌리면, focus 를 nil 로 만들어서, 키보드가 내려가도록 함
+                        isFocused = nil // 버튼이 눌리면, focus 를 nil 로 만들어서, 키보드가 내려가도록 함
                     } label: {
                         Image(systemName: "plus.circle.fill")
                     }
@@ -44,7 +44,7 @@ struct ToDoListView: View {
                         SortDescriptor(keyPath: "completed"),
                         SortDescriptor(keyPath: "urgency", ascending: false)
                     ])) { toDo in
-                        ToDoListRow(toDo: toDo)
+                        ToDoListRow(toDo: toDo, isFocused: _isFocused)
                     }
 //                    .onDelete(perform: $toDos.remove(atOffsets:))
                     .listRowSeparator(.hidden)
@@ -60,6 +60,18 @@ struct ToDoListView: View {
             }
             .animation(.default, value: toDos)
             .navigationTitle("Realm ToDos")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    HStack {
+                        Spacer()
+                        Button {
+                            isFocused = nil
+                        } label: {
+                            Image(systemName: "keyboard.chevron.compact.down")
+                        }
+                    }
+                }
+            }
         }
     }
 }
