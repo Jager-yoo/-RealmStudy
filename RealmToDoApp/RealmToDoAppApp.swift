@@ -13,7 +13,7 @@ struct RealmToDoAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ToDoListView()
+            MainTabView()
                 .onAppear {
                     // Realm 데이터가 어디에 저장되는지 확인하기 위한 코드
                     print("⚠️⚠️⚠️")
