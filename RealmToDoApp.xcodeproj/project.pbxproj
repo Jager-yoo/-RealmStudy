@@ -17,6 +17,8 @@
 		C157550A27FB62A200F2F44D /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157550927FB62A200F2F44D /* ToDo.swift */; };
 		C157550D27FB757B00F2F44D /* ToDoListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157550C27FB757B00F2F44D /* ToDoListRow.swift */; };
 		C157550F27FBFAAF00F2F44D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157550E27FBFAAF00F2F44D /* MainTabView.swift */; };
+		C157551127FC05D500F2F44D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551027FC05D500F2F44D /* Country.swift */; };
+		C157551327FC062000F2F44D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C157551227FC062000F2F44D /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C157550927FB62A200F2F44D /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		C157550C27FB757B00F2F44D /* ToDoListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRow.swift; sourceTree = "<group>"; };
 		C157550E27FBFAAF00F2F44D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C157551027FC05D500F2F44D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C157551227FC062000F2F44D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				C157550927FB62A200F2F44D /* ToDo.swift */,
+				C157551027FC05D500F2F44D /* Country.swift */,
+				C157551227FC062000F2F44D /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,7 +187,9 @@
 				C15754F627FB5E1B00F2F44D /* ToDoListView.swift in Sources */,
 				C157550D27FB757B00F2F44D /* ToDoListRow.swift in Sources */,
 				C15754F427FB5E1B00F2F44D /* RealmToDoAppApp.swift in Sources */,
+				C157551127FC05D500F2F44D /* Country.swift in Sources */,
 				C157550F27FBFAAF00F2F44D /* MainTabView.swift in Sources */,
+				C157551327FC062000F2F44D /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
